@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #069;
+  color: #fff;
+  margin: 0
+}
+.app-wrapper {
+}
+* {
+  box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
+.board {
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 118px;
+  bottom: 33px;
+  padding-right: 15px;
+}
+.list {
+  display: inline-block;
+  width: 250px;
+  flex: 0 0 250px;
+  vertical-align: top;
+  overflow: auto;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f8f8f8;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.card {
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+  -webkit-transition: all 0.3 ease;
+  color: #000
+}
+.card:hover {
+  opacity: 0.5;
+}
+.card.dragging {
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  -webkit-transform: rotate(-2deg);
+}
+.card-placeholder {
+  display: block;
+  height: 34px;
+  border: 1px dashed #ddd;
+  margin: 3px 0;
+  border-radius: 5px;
+}
+.listname {
+  margin: 0 0 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  padding: 5px;
+  border-bottom: 1px dashed #ddd;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+.listname > span {
+  float: right;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.header {
+  padding: 20px;
+  height: 70px;
+  position: relative;
+  background-color: #09446b;
+}
+.logo {
+  margin: 0;
+  display: inline-block;
+}
+.logo small {
+  font-size: 9px;
+  font-weight: normal;
+  color: rgba(255,255,255,0.5);
+  display: block;
+  text-align: right;
+  letter-spacing: 1px;
+}
+.form-add-todo,
+.form-add-list {
+  padding: 10px 20px;
+  background: #0c79c1;
+
+}
+.form-add-todo input,
+.form-add-list input {
+  margin-left: 10px;
+}
+.form-add-list {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+input[type=text] {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+.total-card-counter {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
